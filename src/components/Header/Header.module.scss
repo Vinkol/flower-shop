@@ -1,0 +1,28 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+.header {
+  @include flex(space-between, center);
+  padding: $spacing-md;
+  background: $secondary-color;
+  color: $text-color;
+
+  .logo {
+    font-size: $font-lg;
+    font-weight: bold;
+  }
+
+  .nav a {
+    color: $text-color;
+    margin: 0 $spacing-sm;
+    text-decoration: none;
+  }
+
+  .button {
+    background: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+}
